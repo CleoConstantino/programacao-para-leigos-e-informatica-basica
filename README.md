@@ -78,3 +78,91 @@ SMTP (simple mail transfer protocol): portas 25/segurança 465 - desde 2013 > 58
 **Domínio:** É o endereço  da internet de determinada companhia. Para pesquisar [clique aqui](https://registro.br/).
 
 **Cliente-Servidor:** utiliza um cliente (Firefox) para fazer acesso a uma página web que está sendo servida por um servidor.
+
+## Linguagens de baixo nível
+
+Linguagem de programação de comunicação com os computadores. Os computadores compreendem linguagem binária, ex: 10110101, 11100110, 11000100. Cada elemento é 1 bite e um conjunto de 8 elementos é 1 byte. Quanto mais baixo o nível mais próximo á linguagem binária. Assembly é uma linguagem de mais baixo nível, linguagem utilizada em hardware. Quanto mais baixo o nível, melhor a performance.
+
+## Linguagens de alto nível
+
+Linguagem de alto nível é mais próxima da linguagem humana, ex: print ("Hello Word!") / 10110101. Exemplos de linguagem de alto nível: Java, Pyton. Qunto mais alto o niível mais lenta a sua execução, a sua velocidade não será tão rápida.
+
+## Paradigmas de programação
+
+É como a linguagem de programação é classificada: baixo ou alto nível, orientada a objeto, procedurais, funcionais ou estruturada.
+Qual é a classificação de uma linguagem de programação. Orientada a objeto é uma das mais utilizadas no mundo. Uma linguagem de programação pode ter varias classificações.
+
+## Fundamentos de banco de dados
+
+**Dados / informação:**
+Dados: roberto 2500 700 (não tem contexto).
+Informação: Roberto recebeu 2500 e pagou 700, restando então 1800 (é o dado processado e tem alguma relevância).
+
+**Banco de dados relacionais:**
+
+Banco de dados é um software que armazena dados. Banco de dados relacionais é uma coleção de dados onde esses dados possuem relacionamentos, esses dados são organizados com um conjunto de tabelas, com colunas e linhas, as linhas indicam uma entrada na tabela. As colunas indicam os atributos de uma tabela. Atualmente em banco de dados os limites nas quantidades de dados que guardamos está no espaço em disco de memória. 
+
+Exemplos de bancos de dados relacionais: *MySQL. PostgreSQL.*
+
+**Banco de dados não relacionais:**
+
+Os bancos de dados relacionais são conhecidos como 'Bancos SQL', e o banco de dados não relacional são conhecidos como 'NoSQL', (linguagem de consulta estruturada). É linguagem que usamos para se comunicar com o banco de dados relacionais.
+
+**Banco de dados relacional x Não relacional:**
+
+***Banco de dados relacional***
+
+*Pontos Fortes*
+- SGBDRs: Sistemas Gerenciadores de Banco de Dados Relacional, conforme são chamados oferecem aos usuários processos de validação, verificação e garantias de integridade dos dados.
+- Além disso, oferecem controle de concorrência, recuperação de falhas e segurança, controle de transações, otimização de consultas, dentre outros.
+- 
+*Pontos Fracos:* 
+- Dificuldade em conciliar o modelo relacional com a demando por escalabilidade cada vez mais frequente.
+- Dificuldade em organizar os dados em um sistema distribuído trabalhando com o particionamento de dados.
+
+**Banco de dados não relacional**
+
+Características comuns: como são livres do modelo relacional, promovem alta disponibilidade e maior escalabilidade.
+
+Algumas implementações oferecem:
+
+ - o particionamento e a replicação de dados;
+ - sistemas baseados em armazenamento de chave/valor;
+ - sistemas orientados a documentos.
+ - sistemas orientados a coluna;
+ - sistemas baseados em grafos;
+
+Principais ferramentas: MySQL ferramenta de bando de dados relacional, é o servidor > MySQL Workbech, funciona como um cliente. PostgreSQL > pgAdmin. MongoDB é uma ferramenta de banco de dados não relacional.
+
+## Instalação MySQL para Windows:
+
+Pesquisar no Google 'mysql community download' ou [clique aqui.](https://dev.mysql.com/downloads/) Localizar e clicar em >   [MySQL Installer for Windows.](https://dev.mysql.com/downloads/windows/) são duas opções para fazer o dowload, um é web e o outro é local, opte pela instalação local, que é o arquivo maior. Clicar em > *No thanks, just start my download*, e o dowload já vai iniciar.
+
+Para instalar o PostgreSQL: Pesquisar no Google PosgresSQL ou [clique aqui](https://www.postgresql.org/) > clicar em Download > clicar em Windows > localizar [Download the installer](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads) e clicar > baixar a versão mais nova.
+
+**Instalação MySQL:**
+Após baixar os dois, vai na pasta download e dá um clique duplo no arquivo mysql, dar as permissões necessária, ao abrir a tela do MySQL Installer > selecionar a opção Custon (que é para você customizar o que quer instalar) > selecionar o MySQL Server e o MySQL Workbench.
+Na opção Check Requirements > selecionar o produto > clicar em Execute, o próprio instalador vai fazer o download e instalar, clicar em Next até a opção Accounts and Roles, senha: salva no PassUp.
+
+**Instalação PostgeSQL:**
+
+Vai na pasta download e dá um clique duplo no arquivo postgresql > vai clicando em next ate aa tela password, digitar a senha: postgres > next até a instalação. Antes de clicar em Finish > desmarcar a opção Stack Builder: clicar em Tec Connection
+
+**Teste das ferramentas:** 
+
+- *MySQL Workbench:*
+
+Digitar no menu iniciar 'workbench', vai abrir o sistema do MySQL Workbench. Ao lado da descrição 'MySQL Connections' > clicar na ferramenta para fazermos as configurações.
+Clique duplo na descrição 'mybd' e renomear. Clica no disquete para salvar e seleciona a pasta. Á partir daí, qualquer alteração feita é só clicar em salvar, pode fechar. Clicar 2x em +Add Diagram (criar um diagrama de banco de dados), é para modelar o banco de dados. Criar uma tabela, clicar no icone e depois clicar no editor (espaço vazio da tela), clique duplo para editar o nome da tabela. Para criar colunas, é só clicar em Colun Name: tipo de dados INT (inteiro), selecionar PK (primary key- chave primaria), NN (not null - não aceita valor nulo), AI (auto incremento). VARCHAR(45) caracteres variados > salvar.
+
+Criar o banco de dados a partir desse modelo que criamos: Menu Database > Forward Engineer > Next > marcar os campos DROP objects before each CREATE object > next até finalizar. Fecha as abas, estando na pagina inicial, dê um clique duplo no banco de dados. Para selecionar o banco de dados é só dar 2 cliques em cima.
+
+    insert into pessoas (nome, email) values ("Angelina Jolie", "angelina@gmail.com"); 
+    
+    select * from pessoas;
+
+- *pgAdmin:*
+
+Digitar no menu iniciar 'pgadmin' , que é uma ferramenta administrativa do Postgre. Colocar a senha no momento que ele solicita > clicar em servers > botão direito em cima de databases > create > database, colocar o nome e salve; Vai em table > botão direito > create > table, colocar o nome > aba Collumns criar as colunas clicando no + (Data Type - SERIAL = alto incremento/ CHARACTER VARYNG = varchar) > save.
+
+Editor SQL: Menu Tools > Query Tool 
