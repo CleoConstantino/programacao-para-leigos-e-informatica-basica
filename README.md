@@ -166,3 +166,49 @@ Criar o banco de dados a partir desse modelo que criamos: Menu Database > Forwar
 Digitar no menu iniciar 'pgadmin' , que é uma ferramenta administrativa do Postgre. Colocar a senha no momento que ele solicita > clicar em servers > botão direito em cima de databases > create > database, colocar o nome e salve; Vai em table > botão direito > create > table, colocar o nome > aba Collumns criar as colunas clicando no + (Data Type - SERIAL = alto incremento/ CHARACTER VARYNG = varchar) > save.
 
 Editor SQL: Menu Tools > Query Tool 
+
+## Fundamentos de desenvolvimento de sistemas
+
+1 - **Princípios de desenvolvimento:** o software existe por algum motivo, esse software geral algum valor?
+2 - **KISS:** um projeto simples é fácil de compreender e de manter.
+3 - **Mantenha a visão:** o software tem que ter um foco, ex: gerenciar o empréstimo do livro em uma biblioteca, poderia aproveitar esse software e desenvolver para vender fichas na cantina da escola.
+4 - **O que você produzir alguém vai consumir:** documentar o processo de como foi feito para que no momento que reabrir você não precisa ficar relembrando dos fatos.
+5 - **Esteja aberto para o futuro:** um sistema com uma longa vida tem mais futuro, ex: "o que acontece com o software se essa linguagem que eu estou utilizando não tiver mais suporte?" Tem que estar antenado para que o seu software possa absorver novas tecnologias.
+6 - **Planeje com antecedência para reutilização:** a reutilização economiza tempo e esforço.
+7 - Pense!
+
+**Metodologias ágeis:**
+-  qual método que eu vou utilizar para desenvolver um software? Pega um projeto, quebra em partes e tem que ter uma entrega de valor para o cliente, de forma incremental. 
+- Adaptabilidade;
+- Simplicidade;
+- Feedback constante;
+- Equipes pequenas;
+
+[Manifesto para desenvolvimento ágil de software.](https://agilemanifesto.org/iso/ptbr/manifesto.html)
+
+Metodologias: Scrum, programação extrema, Lean.
+
+**Versionamento de código:** você cria versões a cada modificação. O *Git* é um software de versionamento de código mais utilizado no mundo.
+
+## Fundamentos de publicação e hospedagem de sistemas
+
+Serviço e hospedagem para publicar nossa aplicação.
+
+**Serviço de hospedagem web:**  precisamos ter o domínio definir as tecnologias envolvidas, a linguagem de programação envolvida, pyton, java tem que contratar um serviço de hospedagem que suporte o framework escolhido e o banco de dados também. 
+
+**Hospedagem:** pesquisar no Google, ex:  'hospedagem de sistema pyton'. Verificar em características técnicas quais as linguagem são suportadas e e os bancos de dados. Quando você contrata o serviço de hospedagem a empresa te envia um e-mail com as informações de hospedagem: ex nameserver1 - 202.124.24.55 e nameserver2 - 202.124.24.56 ou DNS Master /DNS Slave. Você deve acessar onde contratou o serviço de domínio e atualizar as informações no painel administrativo em um campo especifico. No máximo 72 horas para aplicar a publicação. No site nic.be é um órgão que verifica o direcionamento da internet no Brasil.
+
+**Publicação de aplicativos mobile:** 
+
+Google - Android: https://developer.android.com/distribute > clicar em Lauch Paly Console >fazer logim com a conta do Google. Taxa única de $25. Para desenvolver aplicativos para o Android você pode utilizar as plataformas: Windows, Linux ou Mac OS X. Linguagem nativa para Androide: Java, Kotlin, C++. Extensão *.apk*
+
+Apple - iOS: https://developer.apple,com/app-store/submissions/ > entrar an conta da Apple. Taxa anual: $99. Para desenvolver aplicativos para iOS você só pode utilizar a plataformas: Mac OS X. Linguagem nativa: Swift/ Objective-C.
+
+Angular, NativeScript, React Native, Cordova, Ionic.
+
+**Publicação de aplicativos local:**servidor HTTP para rodar localmente: apache friends  = 'XAMPP' conjunto de softwares = Apache + MariaDB + PHP + Perl (X é a variável, Windows Linux ou Mac). Fazer download.
+
+## Introdução a linguagem de programação JAVA
+
+Instalando e configurando as ferramentas - Windows: https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html
+Baixar tbm o https://www.eclipse.org/downloads/
