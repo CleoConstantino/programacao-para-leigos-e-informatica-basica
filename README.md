@@ -212,3 +212,69 @@ Angular, NativeScript, React Native, Cordova, Ionic.
 
 Instalando e configurando as ferramentas - Windows: https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html
 Baixar tbm o https://www.eclipse.org/downloads/
+
+Eclipse -> Java: src (código fonte) botão direto em cima dessa pasta > New > Package (é um "pacote" para organizar o código, os nomes seguem uma nomenclatura estilo web site, exemplo: br.com.geekuniversity.geek). Clicar com o botão direto em cima do "pacote" criado > New > Class > preencher o campo Name > marcar o check box - public static void (mainString[] args) > Finish.
+
+**Java Básico 1:** no Java tem que identificar o tipo da variável:
+
+    public static void main (String[] args) {
+	    String nome - "Pedro da Siva";
+	    System.out.println(nome);
+    }
+
+Tudo o que está escrito ente " " e ' ' é reconhecido como uma string (texto):
+
+    int numero = 42;
+    System.out.println("O número é" + numero);
+
+Loop (ciclo de comandos): 
+
+    package br.com.geekuniversity.geek;
+    
+    public class Programa1 {
+    
+	    public static void main(String[] args) {
+    		for(int i=0; i<10; i++) {
+    			System.out.println("O número agora é " + i);
+    		}
+    	}
+    
+    }
+
+**Java básico 2:** criar tela para aplicação desktop.
+
+JFrame = cria a tela;
+JPane = agrupar elementos nessa tela; 
+
+    package br.com.geekuniversity.geek;
+
+    import java.awt.BorderLayout;
+    
+    import javax.swing.JButton;
+    import javax.swing.JFrame;
+    import javax.swing.JPanel;
+    
+    public class Programa2 {
+
+		public static void main(String[] args) {
+			JFrame frame = new JFrame ("Geek University");
+		
+			JPanel panel = new JPanel();
+		
+			JButton btn1 = new JButton ("Seja bem vindo!");
+			JButton bnt2 = new JButton ("Programação para leigos");
+			JButton bnt3 = new JButton ("Introdução a linguagem Java");
+		
+			panel.setLayout(new BorderLayout(1,0));
+		
+			panel.add(btn1, BorderLayout.NORTH);
+			panel.add(bnt2, BorderLayout.CENTER);
+			panel.add(bnt3, BorderLayout.SOUTH);
+		
+			frame.setContentPane(panel);
+			frame.pack();
+			frame.setSize(640, 480);
+			frame.setVisible(true);
+	
+		}
+    }
