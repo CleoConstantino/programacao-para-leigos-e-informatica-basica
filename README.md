@@ -278,3 +278,40 @@ JPane = agrupar elementos nessa tela;
 	
 		}
     }
+    
+    ## Introdução a linguagem de programação Pyton
+
+
+Instalando e configurando as ferramentas no Windows: para acessar o site [clique aqui](https://www.python.org/) > downloads;
+
+Para desenvolver uma aplicação web deve-se instalar o Django (sistema para aplicação web).
+
+## Fundamentos de programação Web
+
+Grande parte das tecnologias envolvidas estão baseada em 3 Pilares: HTML, CSS, JavaScript. 
+
+**Introdução a HTML:** os profissionais dessa área podem ser separados em 3 segmentos:
+Programador/desenvolvedor **backend**: Linguagens dinâmicas (Python, Java, PHP, Ruby). Cuida da linguagem de programação que será processada lá no servidor .
+Programador/desenvolvedor **frontend**: Linguagens estáticas. É a parte que é visualizada pelos usuários (HTML, CSS, Javascript e outras bibliotecas)
+Programador/desenvolvedor **fullstack**: entende tanto de frontend quanto de backend.
+
+Para desenvolver uma página web:
+- Criar a estrutura da página (HTML);
+- Criar e aplicar os estilos da página (CSS);
+- Criar e plicar os comportamentos da página (JavaScript);
+
+**CSS:**
+
+    body {
+    	background-color: yellow; 
+    }
+    
+    .branco {
+    	color: #fff;
+    }
+    
+    #verde {
+    	color: green;
+    }
+
+**JavaScript:** a função do JavaScript é de interagir com o usuário da página.
